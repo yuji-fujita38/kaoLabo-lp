@@ -103,4 +103,40 @@ body {
     padding: 20px;
     font-size: 0.9em;
   }
-  
+
+
+.intro-benefits {
+  background-color: #fff0f3;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro-benefits ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.intro-benefits li {
+  margin: 10px 0;
+}
+
+.before-after {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.before-after div {
+  text-align: center;
+}
+
+.section-img {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
