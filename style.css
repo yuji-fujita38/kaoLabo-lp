@@ -1,0 +1,106 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f4;
+    color: #333;
+  }
+  
+  header.hero {
+    background-image: url('https://images.unsplash.com/photo-1582234372720-1c1f3675d0e3?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+  }
+  
+  header.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  header.hero > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  header.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #d57a8d;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+  }
+  
+  section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  section h2 {
+    text-align: center;
+    color: #d57a8d;
+    margin-bottom: 20px;
+  }
+  
+  .benefits, .testimonials, .faq, .cta {
+    text-align: center;
+  }
+  
+  .benefits img, .testimonials img, .instructor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .benefit-item {
+    flex: 1 1 300px;
+    background: #ffeef0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .faq details {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #d57a8d;
+  }
+  
+  footer {
+    background: #fce4ec;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  
