@@ -44,14 +44,24 @@ body {
     margin-bottom: 30px;
   }
   
-  .cta-button {
-    background-color: #d57a8d;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-  }
+  /* ボタンに浮遊感を追加 */
+.cta-button {
+  background-color: #d57a8d;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+/* ホバー時にさらにリッチに */
+.cta-button:hover {
+  box-shadow: 0 8px 20px rgba(213, 122, 141, 0.4);
+  transform: translateY(-4px);
+}
   
   section {
     max-width: 1000px;
@@ -198,22 +208,5 @@ body {
   100% { transform: translateY(0); }
 }
 
-/* ボタンに浮遊感を追加 */
-.cta-button {
-  background-color: #d57a8d;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  display: inline-block;
-  animation: float 3s ease-in-out infinite;
-  transition: box-shadow 0.3s ease;
-}
 
-/* ホバー時にさらにリッチに */
-.cta-button:hover {
-  box-shadow: 0 8px 20px rgba(213, 122, 141, 0.4);
-  transform: translateY(-4px);
-}
 
