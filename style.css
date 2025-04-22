@@ -140,3 +140,46 @@ body {
   display: block;
   border-radius: 10px;
 }
+
+.lesson-schedule {
+  background-color: #fdf6f3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.lesson-schedule h2 {
+  color: #6b4b3e;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.schedule-box {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 1.1em;
+  color: #4d382f;
+}
+
+.schedule-box h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: #6b4b3e;
+  font-size: 1.2em;
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.schedule-list li {
+  text-align: left;
+  padding: 5px 0;
+  border-bottom: 1px dotted #e8d9cf;
+}
