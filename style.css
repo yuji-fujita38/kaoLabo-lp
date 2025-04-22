@@ -183,3 +183,9 @@ body {
   padding: 5px 0;
   border-bottom: 1px dotted #e8d9cf;
 }
+
+.cta-note {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #555;
+}
