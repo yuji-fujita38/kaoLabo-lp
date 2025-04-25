@@ -7,13 +7,26 @@
   <title>顔ヨガ養成講座｜笑顔で未来を変える</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+
 <body>
 
   <header class="hero">
-    <h1>お顔が上がれば、人生が上がる</h1>
-    <p>笑顔で未来を切り拓く、女性のための顔ヨガ講師養成講座「顔Labo」</p>
-    <a href="#signup" class="cta-button">無料説明会に参加する</a>
+    <h1>
+      お顔が上がれば<br>
+      人生が上がる
+    </h1>
+    <p>
+      笑顔で未来を切り開く<br>
+      女性のための顔ヨガ講師 養成講座<br>
+      <span class="highlight-title">『顔Labo』</span>
+    </p>
   </header>
+
+  <div class="cta-wrap">
+    <a href="#signup" class="cta-button">無料説明会に参加する</a>
+  </div>
+  
 
   <section class="intro-benefits">
   <h2>この講座で得られる未来</h2>
@@ -27,7 +40,9 @@
 
 <section>
   <h2 class="section-title">顔ヨガって？</h2>
-  <p class="explain-text">表情筋を鍛えるだけで、ここまで変わる。</p>
+  <p class="explain-text">顔ヨガとは、お顔の表情筋を鍛えてストレッチする事です。<br>
+    顔には約60もの表情筋があり、心の状態とリンクして複雑な感情を作り出します。<br>
+    表情筋も筋肉なので、使わない筋肉はどんどん衰え、同じ筋肉ばかりを使うと「表情ぐせ」がシワやたるみの原因となるのです！</p>
   <div class="before-after">
     <div>
       <img src="imgs/biforeAfter.jpg" alt="Before" class="responsive-img">
@@ -40,7 +55,7 @@
 
   <div class="box-row">
     <div class="box-text">
-      <h3>手に職もスキルもない。何を選べばいいかわからない</h3>
+      <h3>手に職もスキルもない。<br>何を選べばいいかわからない</h3>
       <p>自分に何が向いているか分からず、毎日なんとなく過ぎていく…。そんなモヤモヤ、抱えていませんか？</p>
     </div>
     <div class="box-image">
@@ -75,7 +90,7 @@
 
   <div class="box-row">
     <div class="box-text">
-      <h3>毎日の鏡が楽しみに。自分の笑顔が好きになる。</h3>
+      <h3>毎日の鏡が楽しみに。<br>自分の笑顔が好きになる。</h3>
       <p>自然な笑顔が身につくだけで、日々の自己肯定感がグンとアップ。あなたらしい魅力が引き出されます。</p>
     </div>
     <div class="box-image">
@@ -95,7 +110,7 @@
 
   <div class="box-row">
     <div class="box-text">
-      <h3>副業や独立の第一歩に。自分のチカラで人生を切り拓く。</h3>
+      <h3>副業や独立の第一歩に。<br>自分のチカラで人生を切り拓く。</h3>
       <p>この講座は、ただのスキル習得ではなく、“自分の人生を動かす一歩”として活用していただけます。</p>
     </div>
     <div class="box-image">
@@ -242,7 +257,7 @@
     <img src="imgs/無料説明会イメージ.png" alt="無料説明会イメージ">
   </div>
   <p>顔ヨガ講師養成講座「顔Labo」にご興味のある方はお気軽にご参加ください♡</p>
-  <a href="https://s.lmes.jp/landing-qr/2001999955-dv0AAknx?uLand=czn4mm" class="cta-button">まずは無料説明会に参加する</a>
+  <a href="https://lin.ee/your-linelink" class="cta-button">LINEから簡単無料説明会に参加する</a>
   <p class="cta-note">
     ※LINE登録後すぐに、希望日程を送るフォームが届きます🎁（所要時間30秒）
   </p>
@@ -252,6 +267,34 @@
   <footer>
     <p>&copy; 2025 顔ヨガ講師養成講座 顔Labo. All rights reserved.</p>
   </footer>
+
+
+  <script>
+    const hero = document.querySelector('.hero');
+  
+    const images = [
+      'imgs/header1.jpg',
+      'imgs/header2.jpg',
+      'imgs/header3.jpg',
+      'imgs/header4.jpg',
+      'imgs/header5.jpg',
+      'imgs/header6.jpg',
+    ];
+  
+    let index = 0;
+  
+    function changeBackground() {
+      hero.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length;
+    }
+  
+    // 初回表示
+    changeBackground();
+  
+    // 1.5秒ごとに切り替え
+    setInterval(changeBackground, 2500);
+  </script>
+
 
 </body>
 </html>
