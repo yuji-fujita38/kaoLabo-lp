@@ -3,17 +3,33 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #fff8f4;
-  color: #333;
+  background-color: #F9F9F9;
+  color: #3A3A3A;
 }
 
 
 
+.highlight-title {
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(90deg, #A88B67, #D6C2A2); /* ←ここ暗めに変更！ */
+  padding: 10px 22px;
+  border-radius: 14px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); /* 濃くしてくっきり */
+  box-shadow: 0 6px 14px rgba(168, 139, 103, 0.3);
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+
+
+
 header.hero {
-  background-image: url('https://images.unsplash.com/photo-1582234372720-1c1f3675d0e3?auto=format&fit=crop&w=1600&q=80');
+  transition: background-image 1s ease-in-out;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -37,18 +53,27 @@ header.hero > * {
 }
 
 header.hero h1 {
-  font-size: 3em;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.4;
   margin-bottom: 20px;
 }
 
 header.hero p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  line-height: 1.8;
 }
+
+
+.cta-wrap {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
 
 /* ボタンに浮遊感を追加 */
 .cta-button {
-background-color: #d57a8d;
+background-color: #BFA27A;
 color: white;
 padding: 15px 30px;
 text-decoration: none;
@@ -61,8 +86,8 @@ transition: box-shadow 0.3s ease;
 
 /* ホバー時にさらにリッチに */
 .cta-button:hover {
-box-shadow: 0 8px 20px rgba(213, 122, 141, 0.4);
-transform: translateY(-4px);
+  background-color: #A88B67;
+  box-shadow: 0 10px 25px rgba(191, 162, 122, 0.4);
 }
 
 section {
@@ -73,7 +98,7 @@ section {
 
 section h2 {
   text-align: center;
-  color: #d57a8d;
+  color: #A88B67;
   margin-bottom: 20px;
 }
 
@@ -106,7 +131,7 @@ section h2 {
   background: #fff;
   margin: 10px 0;
   padding: 10px;
-  border-left: 4px solid #d57a8d;
+  border-left: 4px solid #A88B67;
 }
 
 footer {
@@ -118,10 +143,16 @@ footer {
 
 
 .intro-benefits {
-background-color: #fff0f3;
-padding: 40px 20px;
-text-align: center;
+  background-color: #F8F4EF; /* シャンパンベージュ背景 */
+  padding: 40px 20px;
+  text-align: center;
 }
+
+.intro-benefits h2 {
+  color: #A88B67;  /* ココアブラウン */
+  font-weight: bold;
+}
+
 
 .intro-benefits ul {
 list-style: none;
@@ -131,6 +162,8 @@ font-size: 1.1em;
 
 .intro-benefits li {
 margin: 10px 0;
+color: #3A3A3A;
+
 }
 
 .before-after {
@@ -242,17 +275,19 @@ color: #555;
 .box-text {
   flex: 1 1 55%;
   border: 2px solid #f0e6e3;
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
-  background-color: #fffdfc;
+  background-color: #F8F4EF;
   color: #4d382f;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
   width: 55%;
   box-sizing: border-box;
+  background-color: #F8F4EF;
+  box-shadow: 0 4px 12px rgba(168, 139, 103, 0.05); /* ゴールド系に寄せた影色 */
+
 }
 
 .box-text h3 {
-  color: #c87b8f;
+  color: #8B6A6A; /* 落ち着いたモーブ */
   font-size: 1.3em;
   margin-bottom: 15px;
 }
@@ -291,16 +326,16 @@ color: #555;
 }
 
 .section-title{
-  background-color: #f3e8df;
-  color: #4d382f;
+  background-color: #F5F1EC;
+  color: #3A3A3A;
   text-align: center;
   padding: 20px 10px;
   font-size: 1.3em;
   font-weight: bold;
   font-family: "Helvetica Neue", sans-serif;
   letter-spacing: 0.03em;
-  border-top: 2px solid #e0d2c5;
-  border-bottom: 2px solid #e0d2c5;
+  border-top: 2px solid #F5F1EC;
+  border-bottom: 2px solid #F5F1EC;
 font-size: 1.5em;
 }
 
@@ -408,7 +443,7 @@ font-size: 1.5em;
 
 
 .balloon p {
-  color: #c05a5a;
+  color: #A88B67;
   font-weight: bold;
   margin: 0;
   font-size: 1em;
